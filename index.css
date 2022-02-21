@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 40px;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+section p {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.king {
+    height: 30%;
+}
+
+section img {
+    height: 50%;
+}
+
+section a {
+    display: inline-block;
+    padding: 7px 0px;
+    color: #A84D7A;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50px;
+    background: white;
+}
+
+section:nth-child(1) {
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+
+section:nth-child(2) {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+section:nth-child(3) {
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+
+@media screen and (max-width:1000px) {
+    section{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    section  > img{ 
+        height: 40%;
+    }
+
+    .contenedor-texto {
+        text-align: center;
+    }
+}
