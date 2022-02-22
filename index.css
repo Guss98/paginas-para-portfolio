@@ -187,3 +187,12 @@ section:nth-child(4) {
     transform: rotate(135deg);
     box-shadow: 0 0 0 0 transparent;
 }
+
+@media screen and (max-width:1000px) {
+    .container {
+        top: 75%;
+        left: 60%;
+        margin-left: -5px;
+    }
+
+}
