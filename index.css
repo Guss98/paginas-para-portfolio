@@ -190,9 +190,66 @@ section:nth-child(4) {
 
 @media screen and (max-width:1000px) {
     .container {
-        top: 75%;
-        left: 60%;
-        margin-left: -5px;
+        height: 100%;
+        width: 10%;
+        left: 0%;
+        top: 0%;
+        margin-left: 0%;
     }
 
+    .button {
+        z-index: 999;
+        width: 5%;
+        height: 100%;
+        width: 5%;
+        background: #CC3363;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        position: fixed;
+        border-radius: 0;
+    }
+
+    .button::before {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .button::after{
+        position: absolute;
+        opacity: 0;
+    }
+
+    .nav {
+        transform: translateX(-10%);
+        opacity: 0;
+        top: 20%;
+        left: 25%;
+        transition: all 0.5s ease-in-out;
+        background: #5911A7;
+        width: 200%;
+        box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .nav a {
+        text-align: center;
+        display: block;
+        margin: 40px 0;
+        color: white;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #toggle:checked ~ .nav {
+        opacity: 1;
+        z-index: 999;
+        
+    }
+
+    #toggle:checked ~ .button {
+        transform: scale(9,1);
+        box-shadow: 0 0 0 0 transparent;
+    }
 }
