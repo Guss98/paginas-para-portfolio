@@ -16,7 +16,7 @@ body {
 }
 
 section {
-    height: 650px;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 0px 40px;
@@ -31,7 +31,9 @@ section h2 {
 
 section p {
     font-weight: 300;
+    font-size: 25px;
     margin-bottom: 15px;
+    
 }
 
 .king {
