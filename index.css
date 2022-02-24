@@ -33,7 +33,6 @@ section p {
     font-weight: 300;
     font-size: 25px;
     margin-bottom: 15px;
-    
 }
 
 .king {
@@ -99,6 +98,10 @@ section:nth-child(4) {
 
     section  > img{
         height: 40%;
+    }
+
+    section p {
+        font-size: 15px;
     }
 
     .contenedor-texto {
