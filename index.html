@@ -3,12 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liber-Toy</title> 
     <link rel="stylesheet" href="index.css">
-    
+    <link rel="icon" href="/Liber-toy/imagenes/logoking.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@0,500;1,100&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="sec1">
         <div class="contenedor-texto">
             <h2>Nosotros</h2>
+            <hr color="black" size="2" widht="30">
             <p>Somos King Prints; un proyecto iniciado en 2020 por Guido Ciocco, quien decidió explorar el mundo de la impresión 3D. Un año después, se sumaría al proyecto el diseñador industrial Francisco Russo para aportar desarrollos propios y más profundos de cara a la materialización de productos junto con la resolución de problemáticas de diseño.</p>
             <a href="#sec2">Instructivo</a>
         </div>
@@ -18,7 +22,8 @@
     <section id="sec2">
         <div class="contenedor-texto">
             <h2>Instructivo</h2>
-            <p>En un total de 50 piezas podemos encontrar 3 grupos principales: bloques de construcción (color blanco); plataformas (color madera) y láminas (color negro). Todas las piezas interactúan entre si bajo el principio de encastre a través de pines macho-hembra. Los bordes de las láminas pueden interactuar con las plataformas interpenetrandolas en sus ranurados. El usuario deberá ingeniárselas para fusionar las piezas y crear así, objetos presentes en nuestra realidad.</p>
+            <hr color="black" size="2" widht="30">
+            <p>En un total de 50 piezas podemos encontrar 3 grupos principales: bloques de construcción (color blanco); plataformas (color madera) y láminas (color negro). El usuario deberá ingeniárselas para fusionar las piezas y crear así, objetos presentes en nuestra realidad.</p>
             <a href="#sec3">Ejemplos</a>
         </div>
     <img src="./imagenes/iso1.png" alt="">
@@ -27,6 +32,7 @@
     <section id="sec3">
         <div class="contenedor-texto">
             <h2>Composiciones</h2>
+            <hr color="black" size="2" widht="30">
             <p> Creamos cinco composiciones predeterminadas (automóvil, tanque, cohete, helicóptero y robot) para copiar
                 y crear pero las posibilidades de creación son infinitas e incitamos a crear composiciones propias y
                 originales. Podes ver mas ejemplos <a id="consulta" href=https://www.instagram.com/liber_toy/?hl=es-la target="_blank" rel="noopener noreferrer">aquí.</a></p>
@@ -38,10 +44,11 @@
     <section id="sec4">
         <div class="contenedor-texto">
             <h2>Compromiso con el planeta</h2>
+            <hr color="black" size="2" widht="30">
             <p>Nuestras piezas son realizadas con Poliácido Láctico (PLA), un polímero que se obtiene a partir de caña de azúcar; almidón de maíz o de yuca o de mandioca. Además, nuestras bolsas también son ecológicas</p>
             <a href="#sec1">Nosotros</a>
         </div>
-    <img src="./imagenes/biodegradable-PhotoRoom.png" alt="">
+    <img src="./imagenes/biodegradable-PhotoRoom.png" alt="" class="biod">
     </section>
 
     <div class="container">
@@ -55,8 +62,18 @@
             <a href="#sec4">Reciclaje</a>
             <a href="#">Contacto</a>
         </nav>
-
     </div>
+
+    <form action="">
+        <h2>Contacto</h2>
+        <input type="text" name="Nombre" placeholder="Nombre">
+        <input type="email" name="Correo" placeholder="Email">
+        <input type="text" name="Telefono" placeholder="Telefóno">
+        <textarea name="Mensaje" placeholder="Escriba aquí su mensaje" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="ENVIAR" id="boton">
+
+
+    </form>
 
 </body>
 </html>
