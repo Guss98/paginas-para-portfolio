@@ -146,6 +146,7 @@ section:nth-child(4) {
     
     #sec1 img {
         height: 20%;
+        margin-top: 40px;
     }
 
     section h2 {
