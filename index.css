@@ -37,6 +37,7 @@ section h2 {
         margin-left: 20%;
         margin-top: 15px;
         width: 60%;
+        
 }
 
 section p {
@@ -46,6 +47,8 @@ section p {
     margin-left: 25%;
     margin-top: 15px;
     width: 70%;
+    border-top: solid #4F359B;
+    border-right: solid #4F359B;
 }
 
 .king {
@@ -130,14 +133,12 @@ section:nth-child(4) {
         height: 40%;
     }
 
-    .biod {
-        height: 30%;
-    }
+    
 
     section p {
         font-size: 15px;
         margin-left: 15%;
-        border-left: none;
+        border: none;
     }
 
     #sec1 p {
