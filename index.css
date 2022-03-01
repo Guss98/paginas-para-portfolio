@@ -127,23 +127,25 @@ section:nth-child(4) {
     section{
         flex-direction: column-reverse;
         justify-content: center;
+        width: 100%;
     }
 
     section  > img{
         height: 40%;
     }
-
     
-
     section p {
         font-size: 15px;
         margin-left: 15%;
-        border: none;
     }
 
     #sec1 p {
         font-size: 15px;
         border-left: none;
+    }
+    
+    #sec1 img {
+        height: 25%;
     }
 
     section h2 {
@@ -152,16 +154,22 @@ section:nth-child(4) {
         margin-bottom: 5px;
         text-align: center;
     }
-     #sec1 a {
-         margin-left: 25%;
+    #sec1 a {
+         margin-left: 30%;
      }
     section a {
-        margin-left: 25%;
+        margin-left: 30%;
         margin-bottom: 15px;
     }
-    /* .contenedor-texto {
-        text-align: center;
-    } */
+
+    .contenedor-texto {
+        margin-bottom: 25px;
+    }
+
+    #sec1 contenedor-texto {
+        margin-bottom: 0px;
+    }
+
 }
 
 .container, .button, .nav {
