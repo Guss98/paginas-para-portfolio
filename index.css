@@ -9,12 +9,9 @@ html {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-
-
 body {
     font-family: 'Poppins', sans-serif;
 }
-
 
 section {
     height: 100%;
@@ -58,7 +55,6 @@ section img {
     border-radius: 0px;
     width: auto;
     color: blue;
-
 }
 
 section a {
@@ -81,7 +77,6 @@ section a:hover {
     color: white;
 }
 
-
 section:nth-child(1) {
     background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
 }
@@ -99,44 +94,38 @@ section:nth-child(4) {
 }
 
 @media screen and (max-width:1000px) {
-    section{
+    section {
         flex-direction: column-reverse;
         justify-content: center;
         width: 100%;
         padding: 0px;
     }
-
-    section  > img{
+    section>img {
         height: 25%;
     }
-    
     section p {
         font-size: 15px;
         margin-left: 15%;
     }
-
     section h2 {
         font-size: 30px;
         font-weight: 500;
         margin-bottom: 5px;
         text-align: center;
     }
-  
     section a {
         margin-left: 30%;
         margin-bottom: 15px;
     }
-
     .contenedor-texto {
         margin-bottom: 25px;
     }
-
-   
 }
 
-.container, .button, .nav {
+.container,
+.button,
+.nav {
     position: absolute;
-   
 }
 
 .container {
@@ -151,7 +140,7 @@ section:nth-child(4) {
     display: none;
 }
 
-.button{
+.button {
     z-index: 999;
     width: 43px;
     height: 43px;
@@ -174,7 +163,7 @@ section:nth-child(4) {
     transform: rotate(90deg);
 }
 
-.button::after{
+.button::after {
     position: absolute;
     top: 20px;
     left: 9px;
@@ -187,7 +176,7 @@ section:nth-child(4) {
 .nav {
     transform: translateY(-30%);
     opacity: 0;
-    top: -220px;
+    top: -230px;
     left: -50px;
     transition: all 0.5s ease-in-out;
     background: white;
@@ -208,21 +197,20 @@ section:nth-child(4) {
     letter-spacing: 2px;
 }
 
-#toggle:checked ~ .nav {
+#toggle:checked~.nav {
     opacity: 1;
     transform: translateY(0%);
 }
 
-#toggle:checked ~ .button {
+#toggle:checked~.button {
     transform: rotate(135deg);
     box-shadow: 0 0 0 0 transparent;
 }
 
-.formulario {
+#formulario {
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    height: 100%;
+    height: 75%;
     display: flex;
-    align-items: center;
 }
 
 form {
@@ -230,8 +218,105 @@ form {
     margin: auto;
     background: rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
-   
 }
+
+form h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #895878;
+    text-align: center;
+    text-decoration: underline overline;
+    margin-bottom: 2%;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 8px;
+    font-size: 15px;
+    border: none;
+    padding: 5px;
+}
+
+textarea {
+    min-height: 100px;
+    min-width: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background: #895878;
+    color: white;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+            .footer{
+            background: rgb(240,235,235);
+            background: linear-gradient(0deg, rgba(240,235,235,1) 57%, rgba(224,224,224,1) 100%);
+            width: 100%;    
+            }
+
+            .footer .grupo-1 {
+                width: 100%;
+                max-width: 1200px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 50px;
+                padding: 45px 0px;
+            }
+             
+            .footer .grupo-1 .box figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer .grupo-1 .box figure img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .footer .grupo-1 .box h2 {
+                margin-top: 55px;
+                margin-bottom: 25px;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                color: #E98980;
+            }
+
+            .footer .grupo-1 .box p {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+            }
+
+            .footer .grupo-1 .box .red-social a {
+                display: inline-block;
+                text-decoration: none;
+                width: 30px;
+                height: 45px;
+                line-height: 45px;
+                margin-right: 3px;
+                text-align: center;
+                transition: all 300ms ease;
+            }
+
+            .footer .grupo-1 .box .red-social a:hover {
+                color: #E98980;
+            }
+
+            .footer .grupo-2 {
+                background: #5D6283;
+                padding: 15px 10px;
+                text-align: center;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            } 
 
 
 @media screen and (max-width:1000px) {
@@ -242,7 +327,6 @@ form {
         top: 0%;
         margin-left: 0%;
     }
-
     .button {
         z-index: 999;
         width: 10%;
@@ -254,18 +338,13 @@ form {
         box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
         cursor: pointer;
         position: fixed;
-
     }
-
     .button::before {
-       display: none;
-    }
-    
-
-    .button::after{
         display: none;
     }
-
+    .button::after {
+        display: none;
+    }
     .linea {
         position: absolute;
         top: 50%;
@@ -275,7 +354,6 @@ form {
         background: #ffff;
         transform: rotate(90deg);
     }
-   
     .linea2 {
         position: absolute;
         top: 50%;
@@ -285,7 +363,6 @@ form {
         background: #ffff;
         transform: rotate(90deg);
     }
-
     .linea3 {
         position: absolute;
         top: 50%;
@@ -295,7 +372,6 @@ form {
         background: #ffff;
         transform: rotate(90deg);
     }
-
     .nav {
         transform: translateX(-10%);
         opacity: 0;
@@ -307,7 +383,6 @@ form {
         width: 200%;
         box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1);
     }
-
     .nav a {
         text-align: center;
         display: block;
@@ -318,14 +393,16 @@ form {
         text-transform: uppercase;
         letter-spacing: 2px;
     }
-
-    #toggle:checked ~ .nav {
+    #toggle:checked~.nav {
         opacity: 1;
         z-index: 999;
     }
-
-    #toggle:checked ~ .button {
+    #toggle:checked~.button {
         transform: rotate(0deg);
         box-shadow: 0 0 0 0 transparent;
+    }
+
+    form {
+        width: 100%;
     }
 }
