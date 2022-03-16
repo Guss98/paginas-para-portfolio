@@ -301,7 +301,7 @@ textarea {
                 width: 30px;
                 height: 45px;
                 line-height: 45px;
-                margin-right: 3px;
+                margin-right: -1px;
                 text-align: center;
                 transition: all 300ms ease;
             }
@@ -402,7 +402,26 @@ textarea {
         box-shadow: 0 0 0 0 transparent;
     }
 
+    #formulario {
+        height: 100%;
+    }
+
     form {
         width: 100%;
     }
+
+    #boton {
+        background: #895878;
+        color: white;
+        padding: 20px;
+    }
+
+    .footer .grupo-1  {
+        width: 50%;
+        align-items: center;
+        margin:auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 }
